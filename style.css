@@ -1,0 +1,190 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+    color: #2e3a59;
+}
+
+/* Barra de navegación */
+.fondo-nav {
+    background: linear-gradient(to right, #3a6073, #16222a);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.texto-nav {
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+/* Título */
+.texto-titulo {
+    color: #2e3a59;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Cards */
+.tarjeta-candidato {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tarjeta-candidato:hover {
+    transform: translateY(-5px);
+}
+
+/* Imágenes */
+.imagen-producto {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    background-color: #edf2f7;
+    border-radius: 10px;
+}
+
+/* Imagen de respaldo */
+.imagen-no-disponible {
+    background-color: #cbd5e0;
+    color: #4a5568;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Botón */
+.boton-agregar {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.boton-agregar:hover {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+/* Mensajes de error */
+.mensaje-error {
+    color: #e63946;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Contador */
+#contador-container {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: #2d3748;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+/* Mensaje agregado */
+#mensaje-agregado {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background-color: #38a169;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 1001;
+}
+
+#mensaje-agregado.mostrar {
+    display: block;
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Modal */
+#contenedor-oculto {
+    display: none;
+}
+
+#contenedor-mostrar {
+    display: block;
+}
+
+/* Formularios */
+form {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    color: #1a202c;
+    font-weight: 600;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e0;
+    width: 100%;
+}
+
+form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #2d3748;
+}
+
+form button {
+    display: block;
+    margin: 20px auto 0 auto;
+    background-color: #4c51bf;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2b6cb0;
+}
+
+#div-ocultar {
+    display: none;
+}
+
+#div-mostrar {
+    display: block;
+}
+
+#boton-cerrar, #passwordCierre {
+    margin-bottom: 20px;
+}
